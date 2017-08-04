@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Pong OpenGL" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Pong OpenGL" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-DGLEW_STATIC" />
+					<Add directory="C:/Users/Carter Pryor/Desktop/Stuff/SDKs and APIs/GLEW/glew-1.13.0/include" />
+					<Add directory="C:/Users/Carter Pryor/Desktop/Stuff/SDKs and APIs/Simple OpenGL Image Library/src" />
+					<Add directory="include" />
+					<Add directory="../Pong OpenGL" />
+				</Compiler>
+				<Linker>
+					<Add library="sfml-graphics-d" />
+					<Add library="sfml-window-d" />
+					<Add library="glew32s" />
+					<Add library="SOIL" />
+					<Add library="opengl32" />
+					<Add library="sfml-system-d" />
+					<Add directory="C:/Users/Carter Pryor/Desktop/Stuff/SDKs and APIs/GLEW/glew-1.13.0/lib/Release/Win32" />
+					<Add directory="C:/Users/Carter Pryor/Desktop/Stuff/SDKs and APIs/Simple OpenGL Image Library/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Pong OpenGL" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+					<Add directory="../Pong OpenGL" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="Framebuffer.cpp" />
+		<Unit filename="Framebuffer.h" />
+		<Unit filename="Input.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="Shader.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="Shader.h" />
+		<Unit filename="Sprite.cpp" />
+		<Unit filename="Sprite.h" />
+		<Unit filename="Texture.cpp" />
+		<Unit filename="Texture.h" />
+		<Unit filename="include/ParticleSystem.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/ParticleSystem.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
